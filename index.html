@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <title>Vivero Rosales</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body id="top">
+    
+    <header class="header">
+
+        <div class="alerta">
+            <div class="container">
+                <p class="alerta-texto">Envio gratis a todo el país</p>
+            </div>
+        </div>
+
+        <div class="header-top" data-header>
+            <div class="container">
+
+                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+
+                <div class="input-wrapper">
+                    <input type="search" name="search" placeholder="Search producto" class="search-field">
+                
+                    <button class="search-submit" aria-label="search">
+                        <ion-icon name="search-outline" aria-label="true"></ion-icon>
+                    </button>
+                </div>
+
+                <a href="#" class="logo">
+                    <img src="assets/img/Logo.png" width="179" height="26" alt="Rosales">
+                </a>
+
+                <div class="header-actions">
+
+                    <button class="header-action-btn" aria-label="user">
+                        <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="header-action-btn" aria-label="favorito item">
+                        <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+                    
+                        <span class="btn-badge">0</span>
+                    </button>
+
+                    <button class="header-action-btn" aria-label="cart item">
+                        <data value="0" class="btn-text">$0.00</data>
+                        <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+                    
+                        <span class="btn-badge">0</span>
+                    </button>
+
+                </div>
+        
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="#home" class="navbar-link has-after">Home</a>
+                        </li>
+                        <li>
+                            <a href="#Acercade" class="navbar-link has-after">Acerca de</a>
+                        </li>
+                        <li>
+                            <a href="#productos" class="navbar-link has-after">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#faqs" class="navbar-link has-after">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#contacto" class="navbar-link has-after">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="mobile-navbar" data-navbar>
+            <div class="wrapper">
+                <a href="#" class="logo">
+                    <img src="assets/img/Logo.png" width="179" height="26" alt="Rosales">
+                </a>
+
+                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+            </div>
+
+            <ul class="navbar-list">
+                <li>
+                    <a href="#home" class="navbar-link data-nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#Acercade" class="navbar-link data-nav-link">Acerca de</a>
+                </li>
+                <li>
+                    <a href="#productos" class="navbar-link data-nav-link">Productos</a>
+                </li>
+                <li>
+                    <a href="#faqs" class="navbar-link data-nav-link">FAQs</a>
+                </li>
+                <li>
+                    <a href="#contacto" class="navbar-link data-nav-link">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+
+    <main>
+        <article>
+        <section class="section hero" id="home" aria-label="hero" data-section>
+            <div class="container">
+                
+                <ul class="has-scrollbar">
+
+                    <li class="scrollbar-item">
+                        <div class="hero-card has-bd-image" style="background-image: url('assets/img/inicio.png')">
+                            
+                            <div class="card-content">                    
+                    
+                                <h1 class="h1 hero-titulo">
+                                    Cultivando vida <br> un jardín a la vez
+                                </h1>
+                        
+                                <p class="hero-texto">
+                                    Ofrecemos una gran variedad de plantas de interior y exterior, 
+                                    cuidadas con amor. Nuestro equipo te ayudará a encontrar la planta 
+                                    perfecta para tu espacio. Promovemos prácticas ecológicas para un futuro sostenible. 
+                                    Únete a nuestra comunidad verde y transforma tu vida con cada planta
+                                </p>
+
+                                <p class="price">Desde $1000</p>
+
+                                <a href="#acercade" class="btn btn-primario">Explora</a>
+                            </div>
+
+                        </div>
+                    </li>>
+                
+                </ul>
+            </div>
+        </section>
+        </article>
+    </main>
+
+        <!--ACERCA DE-->
+        <section class="acercade section container" id="acercade">
+            <div class="acerca__container">
+                
+            </div>
+        </section>
+
+    <footer class="footer-section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="ri-leaf-line footer__logo-icon"></i> Plantex
+                </a>
+
+                <h3 class="footer__title">
+                    Suscríbete a nuestro newsletter <br> para mantenerte actualizado
+                </h3>
+
+                <div class="footer__suscribite">
+                    <input type="email" placeholder="Enter your email" class="footer__input">
+
+                    <button class="button button--flex footer__button">
+                        Suscribite
+                        <i class="ri-arrow-right-up-line button__icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Ubicación</h3>
+
+                <ul class="footer__data">
+                    <li class="footer__information">Argentina</li>
+                    <li class="footer__information">Rosales - 54624</li>
+                    <li class="footer__information">Remedios de Escalada</li>
+                </ul>
+            </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contactanos</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">11-6581-6591</li>
+                        
+                        <div class="footer__social">
+                            <a class="footer__social-link" href="http://www.facebook.com/">
+                                <i class="fi fi-brands-facebook"></i>
+                            </a>
+                            <a class="footer__social-link" href="http://www.instagram.com/">
+                                <i class="fi fi-brands-instagram"></i>
+                            </a>
+                            <a class="footer__social-link" href="http://www.whatsapp.com/">
+                                <i class="fi fi-brands-whatsapp"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Aceptamos todas las tarjetas
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="assets/img/card1.png" alt="" class="footer__card">
+                        <img src="assets/img/card2.png" alt="" class="footer__card">
+                        <img src="assets/img/card3.png" alt="" class="footer__card">
+                        <img src="assets/img/card4.png" alt="" class="footer__card">
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Yesica Dorado. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="assets/js/miarchivo.js"></script>
+</body>
+</html>
