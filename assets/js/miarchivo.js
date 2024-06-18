@@ -1,4 +1,4 @@
-let nombre = prompt('Ingrese nombre');
+/* let nombre = prompt('Ingrese nombre');
 let apellido = prompt('Ingrese apellido');
 
 let nacim = Number(prompt('Ingrese su año de nacimiento'));
@@ -16,7 +16,7 @@ if (miEdad >= 18) {
     alert('Su edad es: ' + miEdad + ' años, No puede continuar con la compra, solo consultar valores');
 }
 
-alert('Bienvenido: ' + nombre + ' ' + apellido + '!!' + ' Esta por realizar la compra / consulta sobre productos para tu jardin');
+alert('Bienvenido: ' + nombre + ' ' + apellido + '!!' + ' Esta por realizar la compra / consulta sobre productos sobre diferentes Birritas');*/
 
 const addEventOnElem = function (elem, type, callback) {
     if (elem.length > 1){
@@ -28,64 +28,75 @@ const addEventOnElem = function (elem, type, callback) {
     }
 }
 
-/* navbar toggle */
 
-const navTogglers = document.querySelectorAll("[data-nav-toggler]");
-const navbar = document.querySelector("[data-navbar]");
-const navbarLinks = document.querySelectorAll ("[data-nav-link]");
-const overlay = document.querySelector ("[data-overlay]");
+const addEventOnElements = function (elements, eventType, callback) {
+    for (let i = 0; i < elements.length; i++) {
+    elements[i].addEventListener(eventType, callback);
+    }
+}
+    
 
-addEventOnElem(navTogglers, "click", toggleNavbar);
+    // navbar functional
+    
+const [navbar, navToggler, navbarLinks] = [
+    document.querySelector("[data-navbar]"),
+    document.querySelector("[data-nav-toggler]"),
+    document.querySelectorAll("[data-nav-link]")
+];
 
+const toggleNavbar = function () {
+    navbar.classList.toggle("active");
+    this.classList.toggle("active");
+    document.body.classList.toggle("active");
+}
+    
+navToggler.addEventListener("click", toggleNavbar);
+    
+    
 const closeNavbar = function () {
     navbar.classList.remove("active");
-    overlay.classList.remove("active");
+    navToggler.classList.remove("active");
+    document.body.classList.remove("active");
 }
-
-addEventOnElem(navbarLinks, "click", closeNavbar);
-
-/* header fijo y boton lateral */
-
+    
+addEventOnElements(navbarLinks, "click", closeNavbar);
+    
+    
+    
+    // header activo
+    
 const header = document.querySelector("[data-header]");
-const backTopBtn = document.querySelector("[data-back-top-btn]");
-
-const headerActive = function () {
-    if (window.scrollY > 150) {
-        header.classList.add("active");
-        backTopBtn.classList.add("active");
+    
+const activeElemOnScroll = function () {
+    if (window.scrollY >= 50) {
+    header.classList.add("active");
     } else {
-        header.classList.remove("active");
-        backTopBtn.classList.remove("active");
+    header.classList.remove("active");
     }
 }
+    
+window.addEventListener("scroll", activeElemOnScroll);
+    
 
-addEventOnElem(window, "scroll", headerActive);
-
-let lastScrolledPos = 0;
-
-const headerSticky = function () {
-    if (lastScrolledPos >= window.scrollY){
-        header.classList.remove("header-hide");
-    } else {
-        header.classList.add("header-hide");
+    
+const revealElements = document.querySelectorAll("[data-reveal]");
+    
+const revealOnScroll = function () {
+    for (let i = 0; i < revealElements.length; i++) {
+    
+    if (revealElements[i].getBoundingClientRect().top < window.innerHeight / 1.1) {
+        revealElements[i].classList.add("revealed");
+    
+    if (revealElements[i].classList.contains("btn")) {
+    setTimeout(function () {
+        revealElements[i].style.transition = "0.25s ease";
+    }, 1000);
     }
-
-    lastScrolledPos = window.scrollY;
-}
-
-addEventOnElem(window, "scroll", headerSticky);
-
-/* desplazamiento */
-
-const sections = document.querySelectorAll("[data-section]");
-
-const scrollReveal = function () {
-    for (let i = 0; i < sections.length; i++){
-        if (sections[i].getBoundingClientRect().top < window.innerHeight / 2) {
-            sections[i].classList.add("active");
-        }
+    }
+    
     }
 }
-scrollReveal ();
-
-addEventOnElem(window, "scroll", scrollReveal);
+    
+window.addEventListener("scroll", revealOnScroll);
+    
+revealOnScroll();

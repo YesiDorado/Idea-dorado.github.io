@@ -4,158 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    <title>Vivero Rosales</title>
+    <title>Re.Bar</title>
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="preload" as="image" href="assets/img/hero-banner.jpg">
 </head>
-<body id="top">
+<body>
     
     <header class="header">
 
-        <div class="alerta">
+        <div class="header-top">
             <div class="container">
-                <p class="alerta-texto">Envio gratis a todo el país</p>
+
+                <p class="header-top-texto">
+                    <i class="fi fi-ss-marker" aria-hidden="true"></i>
+                    <span class="span">Abierto: </span> 11:00 - 01:00
+                </p>
+
+                <ul class="social-list">
+                    <li>
+                        <a class="social-link" href="http://www.facebook.com/">
+                            <i class="fi fi-brands-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="http://www.instagram.com/">
+                            <i class="fi fi-brands-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="http://www.whatsapp.com/">
+                            <i class="fi fi-brands-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="header-top-texto">
+                    <i name="location-outline" aria-hidden="true"></i>
+                    <span class="span">Ubicación</span> Juan de garay 25235, Remedios de Escalada
+                </p>
             </div>
         </div>
 
-        <div class="header-top" data-header>
+        <div class="header-bottom" data-header>
             <div class="container">
-
-                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </button>
-
-                <div class="input-wrapper">
-                    <input type="search" name="search" placeholder="Search producto" class="search-field">
                 
-                    <button class="search-submit" aria-label="search">
-                        <ion-icon name="search-outline" aria-label="true"></ion-icon>
-                    </button>
-                </div>
-
                 <a href="#" class="logo">
-                    <img src="assets/img/Logo.png" width="179" height="26" alt="Rosales">
+                    <img src="assets/img/Logo.png" width="216" height="80" alt="Re.Bar" class="w-100">
                 </a>
+                
+                <nav class="navbar" data-navbar>
 
-                <div class="header-actions">
-
-                    <button class="header-action-btn" aria-label="user">
-                        <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
-                    </button>
-
-                    <button class="header-action-btn" aria-label="favorito item">
-                        <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
-                    
-                        <span class="btn-badge">0</span>
-                    </button>
-
-                    <button class="header-action-btn" aria-label="cart item">
-                        <data value="0" class="btn-text">$0.00</data>
-                        <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
-                    
-                        <span class="btn-badge">0</span>
-                    </button>
-
-                </div>
-        
-                <nav class="navbar">
                     <ul class="navbar-list">
                         <li>
-                            <a href="#home" class="navbar-link has-after">Home</a>
+                            <a href="#home" class="navbar-link" data-nav-link>Home</a>
                         </li>
                         <li>
-                            <a href="#Acercade" class="navbar-link has-after">Acerca de</a>
+                            <a href="#Acercade" class="navbar-link" data-nav-link>Acerca de</a>
                         </li>
                         <li>
-                            <a href="#productos" class="navbar-link has-after">Productos</a>
+                            <a href="#productos" class="navbar-link" data-nav-link>Productos</a>
                         </li>
                         <li>
-                            <a href="#faqs" class="navbar-link has-after">FAQs</a>
+                            <a href="#blogs" class="navbar-link" data-nav-link>Blogs</a>
                         </li>
                         <li>
-                            <a href="#contacto" class="navbar-link has-after">Contacto</a>
+                            <a href="#contacto" class="navbar-link" data-nav-link>Contacto</a>
                         </li>
+
                     </ul>
                 </nav>
-            </div>
-        </div>
-    </header>
 
-    <div class="sidebar">
-        <div class="mobile-navbar" data-navbar>
-            <div class="wrapper">
-                <a href="#" class="logo">
-                    <img src="assets/img/Logo.png" width="179" height="26" alt="Rosales">
-                </a>
-
-                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                    <span class="span"></span>
+                    <span class="span"></span>
                 </button>
+        
             </div>
-
-            <ul class="navbar-list">
-                <li>
-                    <a href="#home" class="navbar-link data-nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="#Acercade" class="navbar-link data-nav-link">Acerca de</a>
-                </li>
-                <li>
-                    <a href="#productos" class="navbar-link data-nav-link">Productos</a>
-                </li>
-                <li>
-                    <a href="#faqs" class="navbar-link data-nav-link">FAQs</a>
-                </li>
-                <li>
-                    <a href="#contacto" class="navbar-link data-nav-link">Contacto</a>
-                </li>
-            </ul>
         </div>
 
-        <div class="overlay" data-nav-toggler data-overlay></div>
-    </div>
+    </header>
 
     <main>
         <article>
-        <section class="section hero" id="home" aria-label="hero" data-section>
-            <div class="container">
+
+            <!-- Hero -->
+
+            <section class="section hero has-bd-image" id="home" aria-labelledby="hero-label" style="background-image: url(assets/img/hero-banner.jpg);">
+                <div class="container">
+
+                    <p class="section-subtitulo has-before reveal-left" data-reveal>Bienvenidos a Re.Bar</p>
                 
-                <ul class="has-scrollbar">
-
-                    <li class="scrollbar-item">
-                        <div class="hero-card has-bd-image" style="background-image: url('assets/img/inicio.png')">
-                            
-                            <div class="card-content">                    
-                    
-                                <h1 class="h1 hero-titulo">
-                                    Cultivando vida <br> un jardín a la vez
-                                </h1>
-                        
-                                <p class="hero-texto">
-                                    Ofrecemos una gran variedad de plantas de interior y exterior, 
-                                    cuidadas con amor. Nuestro equipo te ayudará a encontrar la planta 
-                                    perfecta para tu espacio. Promovemos prácticas ecológicas para un futuro sostenible. 
-                                    Únete a nuestra comunidad verde y transforma tu vida con cada planta
-                                </p>
-
-                                <p class="price">Desde $1000</p>
-
-                                <a href="#acercade" class="btn btn-primario">Explora</a>
-                            </div>
-
-                        </div>
-                    </li>>
+                    <h1 class="h1 hero-titulo reveal-left" id="hero-label" data-reveal> Una excelente birrita para compartir con amigos</h1>
                 
-                </ul>
+                    <div class="btn-grupo reveal-left" data-reveal>
+                        <a href="#" class="btn btn-primario">
+                            <span class="span">Explorá</span>
+
+                            <i class="fi fi-rr-angle-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#" class="btn btn-secundario">
+                            <span class="span">Delivery</span>
+
+                            <i class="fi fi-rr-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
             </div>
+        </section>
+
+        <section class="section coleccion" id="coleccion" aria-label="coleccion" data-section>
+            <div class="container">
+
+            </div>
+
         </section>
         </article>
     </main>
 
         <!--ACERCA DE-->
-        <section class="acercade section container" id="acercade">
+        <section class="acerca section container" id="acerca">
             <div class="acerca__container">
+                
+                <div class="acerca-content">
+
+                    <p class="section-subtitle reveal-left" id="acerca-label" data-reveal>Acerca de</p>
+
+                    <h2 class="h2 section-titulo reveal-left" data-reveal>Re.Bar: La Revolución de la Cerveza Artesanal</h2>
+        
+                    <p class="section-texto reveal-left" data-reveal>
+                        Re.Bar es una cervecería artesanal ubicada en Remedios de EScalada, fundada en 1990. Destacan por elaborar cervezas de alta calidad con ingredientes locales, ofreciendo una amplia variedad de estilos desde Pale Ales hasta cervezas de temporada innovadoras.
+
+                        El ambiente de Re.Bar es acogedor y combina lo rústico con lo moderno, perfecto para disfrutar de una buena cerveza y comida gourmet. Además, organizan eventos y talleres para promover la cultura cervecera en la comunidad.                    </p>
+
+                    <div class="acerca-card reveal-left" data-reveal>
+                        <figure class="card-banner img-holder" style="--width: 95; --height: 95;">
+                            <img src="assets/img/acerca-img.jpg" width="95" height="95" loading="lazy" alt="Camarero" class="img-cover">
+                        </figure>
+
+                        <p class="card-texto">
+                            Re.Bar se ha convertido en un referente para los amantes de la cerveza artesanal, ofreciendo una experiencia única y memorable.
+                        </p>
+                    </div>
+
+                    </div>
+                        
+                    <figure class="acerca-banner reveal-right">
+                        <img src="assets/img/acerca-banner.jpg" width="686" height="544" loading="lazy" alt="acerca banner" class="w-100">
+                    </figure>
                 
             </div>
         </section>
