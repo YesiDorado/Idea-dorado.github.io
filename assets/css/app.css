@@ -648,4 +648,61 @@ color: var(--beige);}
     display: flex;
   }
 
+  .navbar .btn { opacity: 1; }
+
+  .nav-open-btn { display: none; }
+
+  .navbar {
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .navbar-link {
+    margin-block-end: 0;
+    font-size: var(--fs-5);
+  }
+
+  /*Home*/
+  .hero { padding-block: 11.875rem; }
+
+  /*Acerca*/
+
+  .acerca .container {
+    grid-template-columns: 0.8fr 1fr;
+    align-items: flex-end;
+  }
+
+  /*menu & blog*/
+
+  :is(.menu, .blog) .section-titulo { margin-block-end: 70px; }
+
+  .menu .grid-list {
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 50px;
+  }
+
+  /*Blog*/
+  .blog .grid-list { gap: 25px; }
+
+  /*Footer*/
+
+  .footer-top {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+}
+
+@media (min-width: 1200px){
+
+  :is(.section, .footer) .container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  /*Header*/
+
+  .navbar-link { gap: 50px; }
+
 }
