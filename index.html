@@ -87,10 +87,30 @@
             </li>
 
           </ul>
-
-          <a href="#" class="btn btn-primary">Reservar una mesa</a>
-
         </nav>
+
+        <div>
+          <ul>
+            <li class="submenu">
+              <ion-icon name="cart-outline"></ion-icon>
+              <div id="carrito">
+                <table id="lista-carrito">
+                  <thead>
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
 
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
           <span class="span"></span>
@@ -152,7 +172,7 @@
               <h2 class="h2 section-title reveal-left" data-reveal>Re.Bar: La Revolución de la Cerveza Artesanal</h2>
   
               <p class="section-text reveal-left" data-reveal>
-                Re.Bar es una cervecería artesanal ubicada en Remedios de EScalada, fundada en 1990.
+                Re.Bar es una cervecería artesanal ubicada en Remedios de Escalada, fundada en 1990.
                 Destacan por elaborar cervezas de alta calidad con ingredientes locales, 
                 ofreciendo una amplia variedad de estilos desde Pale Ales hasta cervezas de temporada innovadoras.
                 El ambiente de Re.Bar es acogedor y combina lo rústico con lo moderno, perfecto para disfrutar de una buena cerveza y comida gourmet. 
@@ -246,160 +266,86 @@
         - #MENU
       -->
 
-      <section class="section menu has-bg-image" id="menu" aria-labelledby="menu-label"
-        style="background-image: url('assets/img/menu-bg.jpg')">
-        <div class="container">
+      <section class="menu-section" id="menu" aria-labelledby="menu-label">
+        <div class="menu">
 
-          <p class="section-subtitle text-center" data-reveal>Choose Best Coffee</p>
-
-          <h2 class="h2 section-title text-center" id="menu-label" data-reveal>
-            Kaffen Popular Coffee Menu
+          <h3 class="section-subtitle text-center">Elegí tu menú</h3>
+          <h2 class="h2 section-title text-center" id="menu-label">
+            Menú Re Beer
           </h2>
-
-          <ul class="grid-list" style="background-image: url('./assets/images/menu-bg-logo.png')">
-
-            <li>
-              <div class="menu-card" data-reveal>
-
-                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
-                  <img src="assets/img/card1.png" width="200" height="200" loading="lazy" alt="Americano Coffee"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Americano Coffee</h3>
-
-                  <p class="card-text">
-                    2/3 espresso, 1/3 streamed milk
-                  </p>
-
-                  <data class="card-price has-before" value="4.9">$5000</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card" data-reveal>
-
-                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
-                  <img src="assets/img/card2.png" width="200" height="200" loading="lazy" alt="Espresso Coffee"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Espresso Coffee</h3>
-
-                  <p class="card-text">
-                    2/3 espresso, 1/3 streamed milk
-                  </p>
-
-                  <data class="card-price has-before" value="4.9">$5000</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card" data-reveal>
-
-                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
-                  <img src="assets/img/card3.png" width="200" height="200" loading="lazy"
-                    alt="Barista Pouring Syrup" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Barista Pouring Syrup</h3>
-
-                  <p class="card-text">
-                    2/3 espresso, 1/3 streamed milk
-                  </p>
-
-                  <data class="card-price has-before" value="3.5">$3.5</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card" data-reveal>
-
-                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
-                  <img src="assets/img/card4.jpg" width="200" height="200" loading="lazy" alt="Cold - Coffee"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Cold - Coffee</h3>
-
-                  <p class="card-text">
-                    2/3 espresso, 1/3 streamed milk
-                  </p>
-
-                  <data class="card-price has-before" value="6.0">$6.0</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card" data-reveal>
-
-                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
-                  <img src="./assets/images/menu-5.jpg" width="200" height="200" loading="lazy" alt="Cappuccino Arabica"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Cappuccino Arabica</h3>
-
-                  <p class="card-text">
-                    2/3 espresso, 1/3 streamed milk
-                  </p>
-
-                  <data class="card-price has-before" value="2.8">$2.8</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card" data-reveal>
-
-                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
-                  <img src="./assets/images/menu-6.jpg" width="200" height="200" loading="lazy" alt="Milk Cream Coffee"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Milk Cream Coffee</h3>
-
-                  <p class="card-text">
-                    2/3 espresso, 1/3 streamed milk
-                  </p>
-
-                  <data class="card-price has-before" value="7.5">$7.5</data>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
         </div>
       </section>
+
+      <section id="lista" class="beers container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="beer" data-reveal>
+                  <h3>Dos pintas</h3>
+                  <p class="precio">$2000</p>
+                  <img src="assets/img/card-1.jpg" alt="birras">
+                  <p>Dos pintas a elección</p>
+                  <a href="#" class="agregar-carrito btn-2" data-id="1"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="beer" data-reveal>
+                  <h3>Papas y Pollo Frito</h3>
+                  <p class="precio">$10000</p>
+                  <img src="assets/img/card-2.jpg" alt="birras">
+                  <p>Papas fritas + Pollo Frito, incluye una Pinta a elección</p>
+                  <a href="#" class="agregar-carrito btn-2" data-id="2"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="beer" data-reveal>
+                  <h3>Hamburguesa Re Bar</h3>
+                  <p class="precio">$20000</p>
+                  <img src="assets/img/card-3.jpg" alt="birras">
+                  <p>Hamburguesa Re Bar + una Pinta a elección</p>
+                  <a href="#" class="agregar-carrito btn-2" data-id="3"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="beer" data-reveal>
+                  <h3>Lomito</h3>
+                  <p class="precio">$30000</p>
+                  <img src="assets/img/card-4.jpg" alt="birras">
+                  <p>Lomito para compartir + 2 Pintas a elección</p>
+                  <a href="#" class="agregar-carrito btn-2" data-id="4"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="beer" data-reveal>
+                  <h3>Pizza</h3>
+                  <p class="precio">$20000</p>
+                  <img src="assets/img/card-5.jpg" alt="birras">
+                  <p>Pizza + 2 Pinta a elección</p>
+                  <a href="#" class="agregar-carrito btn-2" data-id="5"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="beer" data-reveal>
+                  <h3>Salchichas Alemanas</h3>
+                  <p class="precio">$2000</p>
+                  <img src="assets/img/card-6.jpg" alt="birras">
+                  <p>Salchichas con Chucrut + una Pinta a elección</p>
+                  <a href="#" class="agregar-carrito btn-2" data-id="6"></a>
+                </div>
+              </div>
+            
+          </div>
+
+          <div class="swiper-button-next"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+          <div class="swiper-button-prev"><ion-icon name="chevron-back-outline"></ion-icon></div>
+          <div class="swiper-page"></div>
+
+        </div>
+        
+      </section>
+
+      
 
       <!-- 
         - #FEATURE
@@ -716,42 +662,42 @@
         
                       <li>
                         <div class="grid-item">
-                          <img src="assets/img/card1.png" width="80" height="80" loading="lazy" alt="Galeria"
+                          <img src="assets/img/card-1.jpg" width="80" height="80" loading="lazy" alt="Galeria"
                             class="w-100">
                         </div>
                       </li>
         
                       <li>
                         <div class="grid-item">
-                          <img src="assets/img/card2.png" width="80" height="80" loading="lazy" alt="Galeria"
+                          <img src="assets/img/card-2.jpg" width="80" height="80" loading="lazy" alt="Galeria"
                             class="w-100">
                         </div>
                       </li>
         
                       <li>
                         <div class="grid-item">
-                          <img src="assets/img/card3.png" width="80" height="80" loading="lazy" alt="Galeria"
+                          <img src="assets/img/card-3.jpg" width="80" height="80" loading="lazy" alt="Galeria"
                             class="w-100">
                         </div>
                       </li>
         
                       <li>
                         <div class="grid-item">
-                          <img src="assets/img/card4.jpg" width="80" height="80" loading="lazy" alt="Galeria"
+                          <img src="assets/img/card-4.jpg" width="80" height="80" loading="lazy" alt="Galeria"
                             class="w-100">
                         </div>
                       </li>
         
                       <li>
                         <div class="grid-item">
-                          <img src="assets/img/banner1.jpg" width="80" height="80" loading="lazy" alt="Galeria"
+                          <img src="assets/img/card-5.jpg" width="80" height="80" loading="lazy" alt="Galeria"
                             class="w-100">
                         </div>
                       </li>
         
                       <li>
                         <div class="grid-item">
-                          <img src="assets/img/banner2.jpg" width="80" height="80" loading="lazy" alt="Galeria"
+                          <img src="assets/img/card-6.jpg" width="80" height="80" loading="lazy" alt="Galeria"
                             class="w-100">
                         </div>
                       </li>

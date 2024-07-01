@@ -1,6 +1,6 @@
 'use strict';
 
-let nombre = prompt('Ingrese nombre');
+/*let nombre = prompt('Ingrese nombre');
 let apellido = prompt('Ingrese apellido');
 
 let nacim = Number(prompt('Ingrese su año de nacimiento'));
@@ -18,7 +18,7 @@ if (miEdad >= 18) {
     alert('Su edad es: ' + miEdad + ' años, No puede continuar con la compra, solo consultar valores');
 }
 
-alert('Bienvenido: ' + nombre + ' ' + apellido + '!!' + ' Esta por realizar la compra / consulta sobre productos sobre diferentes Birritas');
+alert('Bienvenido: ' + nombre + ' ' + apellido + '!!' + ' Esta por realizar la compra / consulta sobre productos sobre diferentes Birritas'); */
 
 const addEventOnElem = function (elem, type, callback) {
     if (elem.length > 1){
