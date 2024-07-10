@@ -549,6 +549,11 @@ th{
   height: 100%;
 }
 
+.swiper-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
 .swiper-slide {
   text-align: center;
   padding-bottom: 5rem;

@@ -103,7 +103,7 @@ window.addEventListener("scroll", revealOnScroll);
     
 revealOnScroll();
 
-var swiper = new Swiper (".mySwiper",{
+var swiper = new Swiper (".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
@@ -116,7 +116,7 @@ var swiper = new Swiper (".mySwiper",{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
     },
-    breackpoints: {
+    breakpoints: {
         0:{
             slidesPerView: 1
         },
