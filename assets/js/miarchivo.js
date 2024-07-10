@@ -109,10 +109,10 @@ var swiper = new Swiper (".mySwiper", {
     loop: true,
     loopFillGroupWithBlank: true,
     pagination : {
-        el:".swiper-page",
+        el:".swiper-pagination",
         clickable: true,
     },
-    navigation: {
+    navigation : {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
     },

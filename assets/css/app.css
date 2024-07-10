@@ -538,20 +538,17 @@ th{
   #MENU
 \*-----------------------------------*/
 
-.menu-section { margin: 6.25rem; }
+.menu-section {
+  margin: 6.25rem;
+}
 
 .beers {
   padding: 3.125rem 0;
 }
 
-.swiper{
+.swiper {
   width: 100%;
   height: 100%;
-}
-
-.swiper-wrapper{
-  display: flex;
-  flex-direction: row;
 }
 
 .swiper-slide {
@@ -559,24 +556,24 @@ th{
   padding-bottom: 5rem;
 }
 
-.swiper-page-bullet{
+.swiper-pagination-bullet {
   background-color: var(--white);
   top: 3.125rem;
   opacity: 1;
 }
 
-.swiper-page-bullet-active {
+.swiper-pagination-bullet-active {
   background-color: var(--camel);
 }
 
-.beer{
+.beer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 3.125rem;
 }
 
-.precio{
+.precio {
   color: brown !important;
 }
 
@@ -588,6 +585,18 @@ th{
   margin: .9375rem;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
 
 /*-----------------------------------*\
   #FEATURE
