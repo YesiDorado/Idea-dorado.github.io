@@ -766,6 +766,27 @@ th{
   font-size: var(--fs-5);
 }
 
+/*Scrollbar para navegadores WebKit (Chrome, Safari)*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--rich-black-fogra-29);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--camel);
+    border-radius: 10px;
+    border: 3px solid var(--rich-black-fogra-29);
+}
+
+/* Scrollbar para navegadores Firefox*/
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--camel) var(--rich-black-fogra-29);
+}
 
 
 
@@ -773,27 +794,15 @@ th{
   #MEDIA QUERIES
 \*-----------------------------------*/
 
-/**
- * responsive for large than 575px screen
- */
-
 @media (min-width: 575px) {
 
-  /**
-   * REUSED STYLE
-   */
-
   .container { padding-inline: 30px; }
-
-
 
   /**
    * HEADER
    */
 
   .navbar { padding-inline: 30px; }
-
-
 
   /**
    * MENU
@@ -805,8 +814,6 @@ th{
     gap: 20px;
   }
 
-
-
   /**
    * FEATURE
    */
@@ -815,36 +822,12 @@ th{
 
 }
 
-
-
-
-
-/**
- * responsive for large than 768px screen
- */
-
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
     --fs-1: 9rem;
     --fs-2: 4.2rem;
-
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .h1 { line-height: 1.1; }
 
@@ -855,8 +838,6 @@ th{
 
   .btn ion-icon { font-size: 18px; }
 
-
-
   /**
    * HERO
    */
@@ -866,23 +847,17 @@ th{
     background-position: center;
   }
 
-
-
   /**
    * ABOUT
    */
 
   .about-card .card-text { font-size: var(--fs-4); }
 
-
-
   /**
    * BLOG
    */
 
   .blog-card .card-meta-text { --fs-5: 1.6rem; }
-
-
 
   /**
    * FOOTER
@@ -894,45 +869,16 @@ th{
 
 }
 
-
-
-
-
-/**
- * responsive for large than 992px screen
- */
-
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+
 
   :root {
-
-    /**
-     * typography
-     */
-
     --fs-1: 12rem;
-
-    /**
-     * spacing
-     */
-
     --section-padding: 130px;
-
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
   .grid-list { grid-template-columns: repeat(3, 1fr); }
-
-
 
   /**
    * HEADER
@@ -1024,7 +970,7 @@ th{
 
 
   /**
-   * MENU and BLOG
+   * MENU BLOG
    */
 
   :is(.menu, .blog) .section-title { margin-block-end: 70px; }
@@ -1083,19 +1029,7 @@ th{
 
 }
 
-
-
-
-
-/**
- * responsive for large than 1200px screen
- */
-
 @media (min-width: 1200px) {
-
-  /**
-   * REUSED STYLE
-   */
 
   :is(.section, .footer) .container {
     max-width: 1200px;
@@ -1103,15 +1037,11 @@ th{
     margin-inline: auto;
   }
 
-
-
   /**
    * HEADER
    */
 
   .navbar-list { gap: 50px; }
-
-
 
   /**
    * FEATURE
