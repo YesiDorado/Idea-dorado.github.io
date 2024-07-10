@@ -270,4 +270,18 @@ function leelLocalStorage() {
 
 function eliminarElementoLocalStorage(elemento) {
     let elementosLS;
+
+    elementosLS = obtenerelementosLocalStorage();
+    elementosLS.forEach(function(elementosLS, index) {
+
+        if(elementoLS.id === elemento){
+            elementosLS.splice(index, 1);
+        }
+    });
+
+    localStorage.setItem('elementos', JSON.stringify(elementosLS));
+}
+
+function vaciarLocalStorage() {
+    localStorage.clear();
 }
