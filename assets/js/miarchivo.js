@@ -268,13 +268,12 @@ function leelLocalStorage() {
     });
 }
 
-function eliminarElementoLocalStorage(elemento) {
-    let elementosLS;
+function eliminarElementoLocalStorage(elementoId) {
+    let elementosLS = obtenerelementosLocalStorage();
 
-    elementosLS = obtenerelementosLocalStorage();
-    elementosLS.forEach(function(elementosLS, index) {
+    elementosLS.forEach(function(elementoLS, index) {
 
-        if(elementoLS.id === elemento){
+        if(elementoLS.id === elementoId){
             elementosLS.splice(index, 1);
         }
     });

@@ -36,7 +36,6 @@
 
   --ff-oswald: 'Oswald', sans-serif;
   --ff-roboto: 'Roboto', sans-serif;
-  --ff-merienda: 'Merienda', cursive;
   
   --fs-1: 5rem;
   --fs-2: 3.2rem;
@@ -398,6 +397,20 @@ th{
   color: var(--white);
 }
 
+.cart-icon {
+  font-size: 3rem;
+}
+
+#lista-carrito .borrar {
+  background-color: var(--camel);
+  padding: 0.5rem;
+  border-radius: var(--radius-circle); 
+  transition: background-color 0.3s ease;
+}
+
+#lista-carrito .borrar:hover {
+  background-color: var(--light-gray);
+}
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -563,7 +576,7 @@ th{
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--camel);
+  background-color: var(--camel) !important;
 }
 
 .beer {
@@ -585,17 +598,18 @@ th{
   margin: .9375rem;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: #000;
-}
-
 .swiper-button-next {
   right: 10px;
+  
 }
 
 .swiper-button-prev {
   left: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--camel)!important;
 }
 
 /*-----------------------------------*\
